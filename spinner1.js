@@ -11,11 +11,11 @@ setTimeout(() => {
 }, 500);
 
 setTimeout(() => {
-  process.stdout.write('\r\\   '); 
+  process.stdout.write('\r\\   ');
 }, 700);
 
 setTimeout(() => {
-  process.stdout.write('\r|   ')
+  process.stdout.write('\r|   ');
 }, 900);
 
 setTimeout(() => {
@@ -27,13 +27,13 @@ setTimeout(() => {
 }, 1300);
 
 setTimeout(() => {
-  process.stdout.write('\r\\   '); 
+  process.stdout.write('\r\\   ');
 }, 1500);
 
 setTimeout(() => {
-  process.stdout.write('\r|   ')
+  process.stdout.write('\r|   ');
 }, 1700);
 
 setTimeout(() => {
-  process.stdout.write('\n')
+  process.stdout.write('\n');
 }, 2000);
