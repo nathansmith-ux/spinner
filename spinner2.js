@@ -7,13 +7,13 @@ const timeInterval = 200;
  * @param index of array
  * @returns animation of array elements
  */
-const animation = animationChars.forEach((element, index) => {
+animationChars.forEach((element, index) => {
   setTimeout(() => {
-    process.stdout.write(`\r${element}   `)
+    process.stdout.write(`\r${element}   `);
   }, timeInterval * index);
 });
 
 // Starts a newline when animation is completed
-const startNewLine = setTimeout(() => {
-  process.stdout.write('\n')
-}, timeInterval * animationChars.length)
+setTimeout(() => {
+  process.stdout.write('\n');
+}, timeInterval * animationChars.length);
