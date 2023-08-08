@@ -1,18 +1,19 @@
-const chars = ['|', '/', '-', '\\', '|', '/', '-', '\\', '|'];
-const interval = 200;
+const animationChars = ['|', '/', '-', '\\', '|', '/', '-', '\\', '|'];
+const timeInterval = 200;
 
 /**
- * Function takes in an array and its index value and returns an animation in the command line
+ * Function returns an animation in the command line
  * @param array
  * @param index of array
  * @returns animation of array elements
  */
-chars.forEach((char, index) => {
+const animation = animationChars.forEach((element, index) => {
   setTimeout(() => {
-    process.stdout.write(`\r${char}   `);
-  }, interval * index);
+    process.stdout.write(`\r${element}   `)
+  }, timeInterval * index);
 });
 
-setTimeout(() => {
-  process.stdout.write('\n');
-}, interval * chars.length);
+// Starts a newline when animation is completed
+const startNewLine = setTimeout(() => {
+  process.stdout.write('\n')
+}, timeInterval * animationChars.length)
